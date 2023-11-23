@@ -1,12 +1,12 @@
+daal==2021.4.0
 audiomentations==0.27.0
 keyboard==0.13.5
 librosa==0.9.1
 matplotlib==3.5.0
 mido==1.2.6
 numba==0.53.1
-numpy==1.19.2
-numpy==1.19.5
-PyAudio==0.2.13
+pyaudio==0.2.13
 scipy==1.8.1
 SoundFile==0.10.3.post1
 tensorflow==2.5.0
+keyboard==0.13.5

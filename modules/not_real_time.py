@@ -235,4 +235,9 @@ class DrumDetection:
         self.prd2text()
         if self.create_midi:
             self.midi()
+        for f in glob.glob('./imsi/*.wav'):
+            os.remove(f)
+        for f in glob.glob('./imsi/mel/*.jpg'):
+            os.remove(f)
+        print("Done!")
 

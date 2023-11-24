@@ -1,7 +1,7 @@
 import librosa, glob, soundfile, librosa.display, os, mido
 import numpy as np
 import tensorflow as tf
-from scipy import signal, ndimage
+from scipy import ndimage
 from matplotlib import pyplot as plt
 from audiomentations import AddGaussianNoise
 from modules import model_def, onset_novelty, LR_assign

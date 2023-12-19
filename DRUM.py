@@ -66,7 +66,7 @@ if __name__ == "__main__":
     elif args.create_midi and (args.real_time or args.ignore_bpm):
         print("Midi File needs BPM info. (can't be used w/ ignore_bpm or real_time).")
     elif args.real_time:
-        init.main()
+        init.main(device_idx = device_idx)
     else:
         drum_model = DrumDetection(file_path=output_filename, use_rnn=args.use_rnn, ignore_bpm=args.ignore_bpm, create_midi=args.create_midi)
         if args.wav is None:    

@@ -11,13 +11,13 @@ def rm_post_data(path, ext):
             file_path = os.path.join(path, filename)
             os.remove(file_path)
 
-def main():
+def main(device_idx=2):
     rm_post_data('./imsi/','wav')
     rm_post_data('./imsi/mel/', 'jpg')
     rm_post_data('./data/', 'jpg')
     rm_post_data('./', 'txt')
 
-    rec_sub = subprocess.Popen(["python", "./modules/real_time/record.py"])
+    rec_sub = subprocess.Popen(["python", "./modules/real_time/record.py", device_idx])
     chop_sub = subprocess.Popen(["python", "./modules/real_time/chop.py"])
 
     t = threading.Thread(target=receive.init_model)

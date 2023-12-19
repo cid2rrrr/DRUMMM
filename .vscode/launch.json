@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Python: Current File",
-            "args": ["--wav", "break.wav", "--create_midi"],
+            "args": ["--real_time"],
             "type": "python",
             "request": "launch",
             "program": "${file}",

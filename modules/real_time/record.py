@@ -12,7 +12,7 @@ OUTPUT_FILENAME = "./output.wav"
 if __name__ == "__main__":
     audio_frames = []
     if len(sys.argv) == 2:
-        idx = sys.argv[1]
+        idx = int(sys.argv[1])
     else:
         idx = 2
 

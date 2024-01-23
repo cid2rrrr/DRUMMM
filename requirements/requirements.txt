@@ -6,7 +6,7 @@ matplotlib==3.5.0
 mido==1.2.6
 numba==0.53.1
 pyaudio==0.2.13
-scipy==1.8.1
+scipy==1.11.1
 SoundFile==0.10.3.post1
 tensorflow==2.5.0
 keyboard==0.13.5
